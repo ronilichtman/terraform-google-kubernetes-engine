@@ -89,3 +89,9 @@ variable "impersonate_service_account" {
   type        = string
   default     = ""
 }
+
+variable "skip_download" {
+  description = "Whether to skip downloading gcloud (assumes gcloud is already available outside the module)"
+  type        = bool
+  default     = true
+}

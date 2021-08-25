@@ -62,7 +62,7 @@ module "annotate-sa" {
   version = "~> 2.1.0"
 
   enabled                     = var.use_existing_k8s_sa && var.annotate_k8s_sa
-  skip_download               = true
+  skip_download               = var.skip_download
   cluster_name                = var.cluster_name
   cluster_location            = var.location
   project_id                  = var.project_id
